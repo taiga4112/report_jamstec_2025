@@ -1,15 +1,14 @@
-# grad_thesis_typst
+# JAMSTEC共同研究報告書（2025年度）
 
-- 名前: `自分の名前`
-- タイトル: `卒論修論タイトル`
-- 卒業年度: `卒業年度`
-- 所属: `所属(大学・学部・学科・コース)`
-- 指導教員:`指導教員`
+本リポジトリは、JAMSTECとの2025年度共同研究に関する報告書をTypstで管理・生成するためのプロジェクトです。
 
----
+報告書本文は `main.typ` で管理し、生成された `main.pdf` をGitHub Pagesで公開します。
 
-これは、卒論・修論・博論などの卒業論文をTypstで書くためのフォーマットです。
-このテンプレートを使ったPDFファイルの仕上がりは，[GitHub PagesのPDFファイル](https://mit.ynu.jp/grad_thesis_typst/main.pdf)をご確認ください。
+## 報告書の内容
+
+- 文書種別: 共同研究実施報告書
+- 対象年度: 2025年度
+- 出力形式: PDF
 
 ## How to use
 
@@ -33,3 +32,11 @@
 - `typst` コマンドが必要です。
 - PDF連結には `pdfunite` または `qpdf` が必要です。
 - `pdfunite` を使う場合の例: `brew install poppler`
+
+## GitHub Pagesでの公開
+
+GitHub Actionsでは、Typstコンパイル後に2つのPDFを結合した `main.pdf` を生成し、GitHub Pagesへ公開します。
+
+ワークフロー定義:
+
+- `.github/workflows/gh-pages.yaml`
