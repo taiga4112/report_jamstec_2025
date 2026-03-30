@@ -14,3 +14,22 @@
 ## How to use
 
 [Wiki](https://github.com/mitsuyukiLab/grad_thesis_typst/wiki)にて使い方の詳細を説明していますので、そちらをご覧ください。
+
+## Build with PDF merge
+
+`main.typ` をコンパイルした後に、以下2つのPDFを末尾に連結して `main.pdf` を作るには、次を実行します。
+
+```bash
+./build.sh
+```
+
+連結対象:
+
+- `fig/20260323_hayashi_jamstecMTG.pdf`
+- `fig/20260323_hirukawa_jamstecMTG.pdf`
+
+補足:
+
+- `typst` コマンドが必要です。
+- PDF連結には `pdfunite` または `qpdf` が必要です。
+- `pdfunite` を使う場合の例: `brew install poppler`
