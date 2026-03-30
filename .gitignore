@@ -6,6 +6,8 @@ desktop.ini
 .DS_Store
 *.pdf
 !.gitkeep
+!fig/20260323_hayashi_jamstecMTG.pdf
+!fig/20260323_hirukawa_jamstecMTG.pdf
 
 # Rust
 /target
