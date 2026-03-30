@@ -246,7 +246,7 @@
     #v(10em)
     #block(text(textS)[#submission_date 提出])
     #v(2em)
-    #block(text(textS)[指導教員 #supervisor_name #supervisor_title])
+    // #block(text(textS)[指導教員 #supervisor_name #supervisor_title])
     #v(4em)
 
     // Author information.
